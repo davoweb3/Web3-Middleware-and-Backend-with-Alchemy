@@ -1,7 +1,7 @@
 const fetch = require('node-fetch');
 
 const callAlchemy = async (wallet) => {
-    const backendUrl = 'http://BACKEND-IP-ADDRESS:8082';
+    const backendUrl = 'http://127.0.0.1:8082';
     const url = backendUrl + '/callalchemy';
     const options = {
        method: "POST",

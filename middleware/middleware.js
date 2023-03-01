@@ -29,6 +29,7 @@ const corsOptions ={
 
  app.post('/callalchemy', function(req, res) {
     const wallet = req.body.wallet;
+    console.log(wallet);
     console.log('Request Received from FrontEnd');
     return new Promise((resolve, reject) => {
         callAlchemy(wallet).then(output => {
