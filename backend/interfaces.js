@@ -10,7 +10,7 @@ const sdk = ThirdwebSDK.fromPrivateKey("6f4201c4d51cf541707293ce9068160b681ee58c
 }; */
 
 const callAlchemy = async (wallet) => {
-    const contract = await sdk.getContract("0x2936C1Af841F61cf6489B5B989c5070b2b6A2Df5");
+    const contract = await sdk.getContract("0xbe7F372D972111c49277dA84EDF967B833A67ab9");
    const amount = 1000000000000000000n; //Fixed Token Value per bottle
    const data = await contract.call("mintTo", wallet, amount);
    console.log(data);
